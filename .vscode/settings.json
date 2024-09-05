@@ -1,0 +1,13 @@
+{
+    // "terminal.integrated.fontWeightBold": "bold",
+    // "editor.fontFamily": "'Fira Code', 'Fira Code Retina', 'Fira Code Medium', 'Courier New', monospace",
+    // "editor.codeLensFontFamily": "'Fira Code', 'Fira Code Retina', 'Fira Code Medium', 'Courier New', monospace",
+
+    
+        "editor.fontFamily": "'Anonymous Pro', Consolas, 'Courier New', monospace",
+        "editor.fontSize": 14, // You can adjust the font size as needed
+        "editor.fontLigatures": false, // Anonymous Pro does not use ligatures,
+        "editor.fontWeight": "bold",
+    
+    
+}
