@@ -30,6 +30,8 @@ function dashboard() {
 
   const { data: session } = useSession();
 
+  console.log("session", session)
+
   const form = useForm({
     resolver: zodResolver(AcceptMessageSchema),
   });
