@@ -7,6 +7,7 @@ import { nextAuthOptions } from "../auth/[...nextauth]/options";
 export async function GET(request: Request) {
   await dbConnect();
   const session = await getServerSession(nextAuthOptions);
+  console.log(session)
   const _user: User = session?.user as User;
   if (!session || !_user) {
     return Response.json(
