@@ -17,7 +17,7 @@ import { useForm } from 'react-hook-form';
 import { AcceptMessageSchema } from '@/schemas/acceptMessageSchema';
 import { MessageCard } from '@/components/custom/Messages';
 
-function dashboard() {
+function Dashboard() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isSwitchLoading, setIsSwitchLoading] = useState(false);
@@ -197,4 +197,4 @@ function dashboard() {
   );
 }
 
-export default dashboard;
+export default Dashboard;

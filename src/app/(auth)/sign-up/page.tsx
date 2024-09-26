@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { useDebounceCallback } from "usehooks-ts";
+// import { useDebounceCallback } from "usehooks-ts";
 import * as z from "zod";
 import axios, { AxiosError } from "axios";
 import { useToast } from "@/components/ui/use-toast";
@@ -24,13 +24,13 @@ import { Input } from "@/components/ui/input";
 
 import { Loader2 } from "lucide-react";
 
-export default function signUpForm() {
+export default function SignUpForm() {
   const [username, setUsername] = useState("");
   const [usernameMessage, setUsernameMessage] = useState("");
   const [isCheckingUsername, setIsCheckingUsername] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const debounced = useDebounceCallback(setUsername, 300);
+  // const debounced = useDebounceCallback(setUsername, 300);
 
   const router = useRouter();
   const { toast } = useToast();
