@@ -102,7 +102,7 @@ export default function SignInForm() {
                   Please wait
                 </>
               ) : (
-                "Sign Up"
+                "Sign Ip"
               )}</Button>
           </form>
         </Form>
@@ -110,7 +110,7 @@ export default function SignInForm() {
           <p>
             Not a member yet?{' '}
             <Link href="/sign-up" className="text-blue-600 hover:text-blue-800">
-              Sign up
+              Sign Up
             </Link>
           </p>
         </div>
