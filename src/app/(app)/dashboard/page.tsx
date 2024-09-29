@@ -120,7 +120,7 @@ function Dashboard() {
   };
 
   if (!session || !session.user) {
-    return <div>nothing is there to show ! please login </div>;
+    return <div className='font-mono text-center w-full'>Nothing is there to show ! please login ! </div>;
   }
 
   const { username } = session.user as User;

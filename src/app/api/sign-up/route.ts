@@ -1,7 +1,10 @@
 import { dbConnect } from "@/lib/dbConnect";
 import UserModel from "@/model/User";
 import bcrypt from "bcryptjs";
-import { sendVerificationEmail } from "@/helpers/sendVerificationEmail";
+
+import { sendVerificationEmailbyNodemail } from "@/helpers/nodeMailer";
+
+
 
 export async function POST(request: Request) {
   await dbConnect();
@@ -70,12 +73,12 @@ export async function POST(request: Request) {
       await newUser.save();
     }
     // send verification email
-    const emailResponse = await sendVerificationEmail(
+    const emailResponse = await sendVerificationEmailbyNodemail(
       email,
       username,
       verifyCode
     );
-  console.log("email response--",emailResponse)
+    console.log(emailResponse)
     if (!emailResponse.success) {
       return Response.json(
         {
